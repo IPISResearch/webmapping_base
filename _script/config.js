@@ -8,6 +8,7 @@ var Config = {
     showDisclaimerOnFirstUse: false,
     disclaimerUrl: "_templates/disclaimer.html",
     infoUrl: "_templates/info.html",
+	usePass: false,
     // starting point for map
     mapCoordinates: {
       x: 34,

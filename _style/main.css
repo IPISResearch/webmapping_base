@@ -72,6 +72,21 @@ body.dashboard #menu{
     color: #717c96;
 }
 
+#menu.preloader .button{
+    margin: 10px auto;
+    display: block;
+}
+
+#menu.preloader .inputbox{
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #1DA1F2;
+    text-align: center;
+    border-radius: 4px;
+    display: block;
+}
+
+
 #menu.preloader.big{
     height: auto;
     padding: 20px;
