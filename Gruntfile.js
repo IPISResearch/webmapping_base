@@ -9,6 +9,7 @@ module.exports = function(grunt) {
 			core:{
 				src: [
 					'core/_script/lib/**/*.js',
+                    '!core/_script/lib/mapboxgl.0.43.0.js',
 					'core/_script/map/**/*.js',
 					'core/_script/translation/**/*.js'
 
@@ -27,7 +28,13 @@ module.exports = function(grunt) {
 					'core/_script/c3/**/*.js'
 				],
 				dest: 'build/_script/c3d3.js'
-			}
+			},
+			mapbox:{
+                src: [
+                    'core/_script/lib/mapboxgl.0.43.0.js'
+                ],
+                dest: 'build/_script/mapboxgl.js'
+            }
 		},
 		uglify: {
 			options: {
