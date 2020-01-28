@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 			core:{
 				src: [
 					'core/_script/lib/**/*.js',
-                    '!core/_script/lib/mapboxgl.0.43.0.js',
+                    '!core/_script/lib/mapboxgl.1.5.1.js',
 					'core/_script/map/**/*.js',
 					'core/_script/translation/**/*.js'
 
