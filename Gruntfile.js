@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 			},
 			mapbox:{
                 src: [
-                    'core/_script/lib/mapboxgl.0.43.0.js'
+                    'core/_script/lib/mapboxgl.1.5.1.js'
                 ],
                 dest: 'build/_script/mapboxgl.js'
             }
