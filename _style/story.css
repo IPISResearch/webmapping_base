@@ -1,0 +1,86 @@
+/* story */
+
+body.storyfied{
+    overflow: unset;
+}
+
+body #story{
+    display: none;
+}
+
+body.storyfied #story{
+    position: relative;
+    z-index: 10000;
+    width: 50%;
+    display: block;
+}
+
+body.storyclose{
+    display: none;
+}
+
+body .storyopen,
+body.storyfied .storyclose{
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    right: 10px;
+    top: 3vh;
+    height: 24px;
+    background-color: #1DA1F2;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 8px 5px 8px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+body .storyopen{
+    right: 10px;
+}
+
+body .storyopen:hover,
+body.storyfied .storyclose:hover{
+    cursor: pointer;
+    background-color: #51c0fb;
+}
+
+body.storyfied .storyopen{
+    display: none;
+}
+body.storyclose{
+    display: none;
+}
+
+body.storyfied #storylogo{
+    position: fixed;
+    right: 3vh;
+    bottom: 3vh;
+    z-index: 10001;
+}
+
+body.storyfied #map{
+    position: fixed;
+    top: 0;
+}
+
+body.storyfied #legend,
+body.storyfied #legendRoadblocks,
+body.storyfied #selectbox,
+body.storyfied #searchbox,
+body.storyfied #menu,
+body.storyfied #dashboard,
+body.storyfied .mapboxgl-control-container{
+    display: none;
+}
+
+body.storyfied #menu__{
+    position: fixed;
+    z-index: 2000000;
+}
+
+body.wasstoryfied #menu{
+    top: 64px;
+}
