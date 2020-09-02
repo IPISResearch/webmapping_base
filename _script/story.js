@@ -22,8 +22,8 @@ var Story = function(){
                      offset: 0.5,
                      progress: true
                  })
-                 .onStepEnter(response => {
-                     var chapter = config.chapters.find(chap => chap.id === response.element.id);
+                 .onStepEnter(function(response){
+                     var chapter = config.chapters.find(function(chap){return chap.id === response.element.id});
                      response.element.classList.add('active');
 
                      if (chapter.urlHash){
@@ -52,8 +52,8 @@ var Story = function(){
                          //chapter.onChapterEnter.forEach(setLayerOpacity);
                      //}
                  })
-                 .onStepExit(response => {
-                     var chapter = config.chapters.find(chap => chap.id === response.element.id);
+                 .onStepExit(function(response){
+                     var chapter = config.chapters.find(function(chap){return chap.id === response.element.id});
                      response.element.classList.remove('active');
                     // if (chapter.onChapterExit.length > 0) {
                          //chapter.onChapterExit.forEach(setLayerOpacity);
@@ -153,7 +153,7 @@ var Story = function(){
              story.appendChild(header);
          }
 
-         config.chapters.forEach((record, idx) => {
+         config.chapters.forEach(function(record, idx){
              var container = document.createElement('div');
              var chapter = document.createElement('div');
 
